@@ -20,20 +20,22 @@
 <![endif]-->
 	<title>img vs background</title>
 	<style>
+/*		body{background-color: #fff;}*/
 		#wrap{width:960px; height:500px; margin: 0 auto; background-color: #ccc;}
 			h1{width: 100%; height: 30px; border-bottom:2px solid #fff; padding-bottom:5px;}
+		#wrap>div{width: 50%; height: 400px; float: left; outline:1px solid #777;}
+		#wrap>div>p{width:100%; height:25px; background-color:#fff; text-align:center; 
+			line-height:25px;}
 		
-		
-			#box1{width:50%; height: 400px; float:left; 
-				background-color:#faa; outline:1px solid #777;}
-				#box1>p{width:100%; height:25px; background-color:#fff; 
-					text-align:center; line-height:25px;}
-				#imgbox{}
-			#box2{width:50%; height: 400px; float:left; 
-				background-color:#aaf; outline:1px solid #777;}
-				#box2>p{width:100%; height:25px; background-color:#fff; 
-					text-align:center; line-height:25px;}
-				#bgbox{}
+			#box1{	background-color:#faa; }
+				#imgbox{width: 90%; margin-left:5%; height:350px; background-color: #aaa;}
+				#imgbox>img{width:100px;}
+			#box2{background-color:#aaf; }
+				#bgbox{width:90%; margin-left:5%; height:350px; background-color: #fff;
+					background-image:url("./img/day_01/s_icon.png");
+					background-repeat:no-repeat; background-position: -50px -100px;
+				}
+				#bgbox>span{width: 0; height: 0; display: block; overflow: hidden; }
 	
 
 	</style>
@@ -44,12 +46,18 @@
 		<h1>img vs background</h1>
 		<div id="box1">
 			<p>이미지태그를 사용한 예</p>
-			<div id="imgbox"></div>
+			<div id="imgbox">
+				<img src="./img/day_01/s_icon.png" alt="불꽃 아이콘" />
+			</div><!--// #imgbox-->
 		</div><!--// #box1-->
 		<hr  />
 		<div id="box2">
 			<p>배경이미지를 사용한 예</p>
-			<div id="bgbox"></div>
+			<div id="bgbox">
+				<span>
+					불꽃 아이콘
+				</span>
+			</div>
 		</div><!--// #box2-->
 	</div><!--// #wrap-->
 </body>
