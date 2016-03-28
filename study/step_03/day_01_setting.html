@@ -19,7 +19,13 @@
 	<script src="./js/dist/respond.min.js"></script>
 <![endif]-->
 	<title>Document</title>
-	<style></style>
+	<style>
+		#normal{width: 500px; height: 500px;}
+		#normal>img{width:500px; height:500px;}
+		#backimg{width:500px; height:500px;
+			background-image:url("./img/day_01/back_img.jpg");			
+		}
+	</style>
 	<script>
   		$(document).ready(function(){
 		  
@@ -27,7 +33,15 @@
   	</script>
 </head>
 <body>
-	
+	<div id="wrap">
+		<h1>이미지 불러오기</h1>
+		<div id="normal">
+			<img src="./img/day_01/back_img.jpg" alt="이미지 설명" />
+		</div>
+		<div id="backimg">
+			배경이미지 불러오기
+		</div>
+	</div>
 </body>
 </html>
 
