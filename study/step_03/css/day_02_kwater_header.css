@@ -1,0 +1,6 @@
+/* day_02_kwater_header.css */
+/* -- #header ------------------------------------------------*/
+#header{height: 74px; background-color: #f7f7f7; padding-top: 18px;}
+	h1{width: 100px; height: 60px; background-color: #acc; float: left;}
+	#gnb{width: 232px; height: 18px; background-color: #fac; float:right;}
+	#top_navi{width: 795px; height: 34px; background-color: #acc;float: right;}

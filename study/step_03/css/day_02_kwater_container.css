@@ -1,0 +1,10 @@
+/* day_02_kwater_container.css */
+/* -- #container ------------------------------------------------*/
+#wrap>#container{width:946px; height: 808px; background-color: #ccc; }
+	#lnb{width: 100%; height: 100px;}
+	#lnb>ul{width: 100%; height: 100%; border-bottom: 1px solid #eee;}
+	#container>ul{width: 100%; }
+	.contents_01{height: 168px; margin-top:26px; background-color:#fca;}
+	.contents_02{height: 194px; margin-top:48px; background-color:#acf;}
+	.contents_03{height: 76px; margin-top:7px; background-color:#afa;}
+	.contents_menu{height: 110px; margin-top:37px; background-color:#fcf;}
