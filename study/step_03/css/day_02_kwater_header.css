@@ -6,16 +6,23 @@
 #gnb{width: 232px; height: 18px; background-color: #fac; float:right;}
 	#gnb>ul{width: 100%; height: 100%;}
 	#gnb>ul>li{width: 25%; height: 100%; float: left;}
-/*
-	#gnb>ul>li:hover > ol{display: block;}
-	#gnb ol{width: 300%; height: 100%; margin-top: -56px; 
-		background-color: #aaa; overflow: hidden; display: none;}
-	#gnb ol>li{width: 20%; float: left;}
-*/
+	.gnb_01{}
+	.gnb_02{}
+	.gnb_03{}
+	.gnb_04{}
 
-	#top_navi{width: 795px; height: 34px; background-color: #acc;float: right;}
-
-
+/* -- #top_navi ------------------------------------------------*/
+	#top_navi{width: 795px; height: 34px; margin-top:4px;
+		background-color: #acc;float: right;}
+	#top_navi>ul{width: 100%; height: 100%;}
+	#top_navi>ul>li{width: 12%; height: 100%; float: left; margin-right:5px; background-color: #fff;}
+		.t_navi_01{}
+		.t_navi_02{}
+		.t_navi_03{}
+		.t_navi_04{}
+		.t_navi_05{}
+		.t_navi_06{}
+		.t_navi_07{}
 
 
 
