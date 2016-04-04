@@ -72,6 +72,17 @@ __details, summary, p__
 3. p: details의 내부에 사용되는 p는 summary의 설명을 담는 곳
 > 아직 사용하기 무리데스요~~!!(ie, firefox 에서는 작동X)
 
+**a**
+> inline 태그는 기본적으로 block 감쌀수 없다~~~
+하지만, html5에서부터는 a는 범외로 본다. 
+
+
+```
+<a href="#">
+	<img src="//lorempixel.com/400/400" alt="sdasdf" />
+	<p>내용을 상세하게 설명한코드</p>
+</a>
+```
 
 
 
