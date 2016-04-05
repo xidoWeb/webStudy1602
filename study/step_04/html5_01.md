@@ -59,7 +59,12 @@ html문서가 table구조에서  div로 변경됨에 따라, div무덤~~ 무엇�
 ---
 **image**
 __figure, img, figcaption__
-
+```
+<figure>
+	<img src="" alt="" />
+	<figcaption>이미지 설명</figcaption>
+</figure>
+```
 1. figure: 이미지가 혼자 쓰이는경우가 아닌 별도의 제목이 함께 동반되는경우
 해당하는 이미지 제목을 엮기위해 감싸는 코드명
 2. img...
@@ -73,7 +78,7 @@ __details, summary, p__
 > 아직 사용하기 무리데스요~~!!(ie, firefox 에서는 작동X)
 
 **a**
-> inline 태그는 기본적으로 block 감쌀수 없다~~~
+> inline 태그는 기본적으로 block 감쌀수 없다~~~(니스칠)
 하지만, html5에서부터는 a는 범외로 본다. 
 
 
