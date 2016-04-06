@@ -56,14 +56,16 @@ html5에서 추가된 내용
 
 1. 입력(일부 선택)
 	> 자바스크립트에 의존하던 검증기능들을 html5에서 사용가능하게 추가기능 생겼다.
-	* required: 입력된 내용을 정확하게 검증하기위한 기능(또한, 필수 입력사)
+	* required: 입력된 내용을 정확하게 검증하기위한 기능(또한, 필수 입력사항)
 	* placeholder: input내용에 미리 내용을 삽입하여 접근성을 높이는 기능
 	* autofocus: 자동으로 포커스가 잡혀서 바로 내용을 입력할 수 있게 하는기능
+		- 단, 한번만 사용하기를 권하며, 내용이 스크롤을 움직여서 자리잡은곳에 있다면, 사용 배제
 	* autocomplate: 자동 완성기능
 	
 	- email : <input type="email" />
+	- url : <input type="url" />
 	- search : <input type="search" />
-	- tel : <input type="tel" />
+	- tel : <input type="tel" /> -- 모바일로 구현시에는 숫자키패드가 나타난다
 	- date : <input type="date" />
 	( date, year, week 등 날짜와 관련된 내용은 브라우저마다 완전히 다른기능을 보여주거나 아직 구현이안된 것들도 많다.!)
 <!--
@@ -72,9 +74,10 @@ html5에서 추가된 내용
 -->
 	
 2. 선택
-	- number
-	- range
-	- color
+> number, range는 일정 범위, 단계를 지정해주어야한다(min, max, step)
+	- number: <input type="number" />
+	- range: <input type="range" />
+	- color: <input	 type="color" />
 	
 3. 버튼(기존과 크게 달라지지 않았다!)
 4. 멀티(기타)

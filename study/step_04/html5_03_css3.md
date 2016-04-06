@@ -23,17 +23,18 @@ ___
 	- dt + dd{} 
 * 동위 선택자: ~로 표기하는 선택자. 어떠한 element 동급의 형제 태그중 하나 선택...
 	- dt ~ dd{}
-* nth-child() 선택자
-	- first-child(){}
-	- nth-child(){}
-	- last-child(){}
-	- nth-last-child(){}
+* :nth-child() 선택자 : 연속된 같은 레벨의 동일한 명칭의 태그들의 선택(순서에맞게 선택).....
+	- :first-child(){}
+	- :nth-child(){}
+	- :last-child(){}
+	- :nth-last-child(){}
+	> 차후: 슬라이드배너 같은 효과를 사용시에는 nth-child 사용을 하면 안된다!!
 	
-* nth-of-type() 선택자
-	- first-of-type(){}
-	- nth-of-type(){}
-	- last-of-type(){}
-	- nth-last-of-type(){}
+* :nth-of-type() 선택자: 같은 레벨의 동일한 명칭의 태그선택(같은 태그끼리의 순서를 확인)...
+	- :first-of-type(){}
+	- :nth-of-type(){}
+	- :last-of-type(){}
+	- :nth-last-of-type(){}
 
 
 
