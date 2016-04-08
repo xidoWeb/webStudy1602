@@ -29,7 +29,7 @@ css3로 버전이 향상되면서 여러개의 색상(그라데이션), 여러�
 	- rgba(255, 100, 0, 0.5) ; 빨강(0~255), 녹색(0~255), 파랑(0~255), 투명도(0~1)
 	- hsla(360, 100%, 50%, 0);  색상(0~360), 채도(0~100%),명도(0~100%), 투명도(0~1)
 	- transparent; 공간은 존재하지만 색상은 투명
-	* background-color가 아닌 opacity:0;은 자신을 포함한 내부 element모두 투명 효과
+		* background-color가 아닌 opacity:0;은 자신을 포함한 내부 element모두 투명 효과
 1. background-image : 
 	- url("test.jpg") ,url("test2.png");  이미지담기 " "로 구분 중간에 ,로 표기 사용시 여러장의 이미지 삽입가능(background-position으로 위치 설정)
 	- linear-gradient(45deg, #faa 50%, #fa0 100%); 직선형 그라데이션 색상만들기
