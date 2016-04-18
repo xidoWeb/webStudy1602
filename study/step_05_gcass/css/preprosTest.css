@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* 한글 테스트 */
+#wrap { width: 100%; height: 100%; background-color: #ccc; margin: 0 auto; }
+
+#wrap > #header { width: "inherit"; }
+
+#wrap > #container { width: "inherit"; }
+
+#wrap > #footer { width: "inherit"; }
