@@ -1,0 +1,81 @@
+@import "basic.scss";
+
+// index.scss
+%link{width: 100%; height: 100%; display: block;}
+#wrap {width: 100%; height: 970px;
+  >*{width: 960px; margin: 0 auto;}
+  >#headerWrap{width: 100%; height:60px;
+    background-image:linear-gradient(90deg, $sub2 50%, $main 50%);
+  #xidoHead {
+    width: 960px; height: 50px; margin: 0 auto; 
+    background-color:$main; padding-top:10px;
+    position: relative;
+    >h1{width: 150px; height:60px; float: left; background-color:$sub2; margin-top: -10px;}
+    >h1>a{@extend %link; font-size: 2em; color:$white;}
+    .narImg{width: 300px; height: 40px; float: left; 
+      background-color:#fff; margin-left: 20px;}
+    .sitemap{width: 146px; height: 40px; float: right; 
+      background-color:$sub1; margin-right: 40px;}
+    #xidoNav{width: 800px; height: 30px; background-color: #0ff;
+      border-bottom:$line; right:10px; bottom:-31px;
+      position: absolute; z-index: 1000;
+      margin-top:10px;} 
+    }// #xidoHead
+    
+  }// #headerWrap
+  #banner {height: 430px; background-color:$sub1; overflow: hidden;
+      position: relative;
+    >.banBtn{width: 60px; height: 80px; position: absolute;
+        z-index: 500; top:50%; margin-top: -40px; margin:0 10px;
+      &.banBtn_01{left: 0;}
+      &.banBtn_02{right: 0;}
+      
+      >button{width: 100%; height: 100%; cursor: pointer;}
+      
+      }// .banBtn
+    >ul{width:300%; height: 100%; margin-left:-100%;
+      li{width:calc(100% / 3); float: left; height:inherit;
+        text-align: center; line-height: 430px; font-size:5em;}
+      .banner_1{background-color:#acc;}
+      .banner_2{background-color:#a7c;}
+      .banner_3{background-color:#cc7;}
+    }// ul
+  }// #banner
+  
+  #container {height: 360px; background-color:$main;}
+  
+  #footerWrap{width: 100%; height: 120px;
+    background-color:$sub2;    
+  >#xidoFoot {width: 960px; height: 120px; margin: 0 auto; 
+    background-color:$sub2;}
+  }
+} //#wrap
+
+
+/* 임시테스트 */
+#banner ul>li{transition:all 2s ease;}
+.banBtn_01:hover ~ ul>li:first-child{margin-left:calc(100% / 3);}
+.banBtn_02:hover ~ ul>li:first-child{margin-left:calc(-100% / 3);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
