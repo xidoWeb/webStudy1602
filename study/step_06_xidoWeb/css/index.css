@@ -236,30 +236,75 @@
 #wrap #container .info_01 .infoNar {
   width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.3);
   margin-top: 16px;
-  -webkit-display: flex;
-  -epub-display: flex;
-  -moz-display: flex;
-  -ms-display: flex;
-  -o-display: flex;
-  display: flex;
+}
+
+#wrap #container .info_01 .infoNar::before, #wrap #container .info_01 .infoNar::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #wrap #container .info_01 .infoNar .infoAll {
-  width: 50%;
-  height: 280px;
-  background: #acc;
-  -webkit-flex: 1;
-  flex: 5;
+  width: 130px;
+  height: 240px;
+  float: left;
+  background-image: url("../img/main/article/article_box_01.png");
+  background-repeat: no-repeat;
+  padding: 20px 30px 20px 220px;
+}
+
+#wrap #container .info_01 .infoNar .infoAll > ul {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #container .info_01 .infoNar .infoAll > ul > li {
+  width: 100%;
+  height: 40px;
+}
+
+#wrap #container .info_01 .infoNar .infoAll > ul > li > a {
+  line-height: 40px;
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+#wrap #container .info_01 .infoNar .infoAll > ul > li > a:hover {
+  font-weight: bold;
 }
 
 #wrap #container .info_01 .infoNar .infoText {
-  width: 50%;
+  width: calc(100% - 380px);
   height: 280px;
   background: #fcc;
-  -webkit-flex: 1;
-  flex: 1;
+  float: left;
+}
+
+#wrap #container .info_01 .infoNar .infoText .infoImg {
+  width: 240px;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+#wrap #container .info_01 .infoNar .infoText .infoImg img {
+  height: 100%;
+}
+
+#wrap #container .info_01 .infoNar .infoText .infoTextBox {
+  width: calc(100% - 280px);
+  height: 240px;
+  float: left;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#wrap #container .info_01 .infoNar .infoText .infoTextBox p {
+  width: 100%;
+  height: 100%;
+  padding-right: 100%;
+  overflow-y: auto;
 }
 
 #wrap #footerWrap {
