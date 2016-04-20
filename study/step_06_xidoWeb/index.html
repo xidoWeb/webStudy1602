@@ -8,6 +8,7 @@
           type="image/x-icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="favicon.png" />
     <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <!--[if lte IE 9]>
     <script src="./js/dist/html5shiv.min.js"></script>
@@ -38,13 +39,36 @@
           <button>왼쪽버튼</button></div>
         <div class="banBtn_02 banBtn">
           <button>오른쪽버튼</button></div>
+        <input type="radio" name="inde" id="indi_01" />
+        <input type="radio" checked="checked" name="inde" id="indi_02" />
+        <input type="radio" name="inde" id="indi_03" />
+        <ol>
+          <li><label for="indi_01"><span>배너 1번째</span></label></li>
+          <li><label for="indi_02"><span>배너 2번째</span></label></li>
+          <li><label for="indi_03"><span>배너 3번째</span></label></li>
+        </ol>
         <ul>
           <li class="banner_1">banner_1</li>
           <li class="banner_2">banner_2</li>
           <li class="banner_3">banner_3</li>
         </ul>
       </section>
-      <article id="container"></article>
+      <article id="container">
+        <h2>infomation</h2>
+        <div class="info_01">
+          <div class="infoTop">
+            <h3>forum</h3>
+            <div class="line"></div>
+            <div class="more">
+              <a href="#" class="fa fa-plus-circle"><span>더보기</span></a>
+            </div>
+          </div><!--// .infoTop-->
+          <div class="infoNar">
+            <div class="infoAll"></div>
+            <div class="infoText"></div>
+          </div><!--// .infoNar-->
+        </div><!--// .info_01-->
+      </article>
       <div id="footerWrap">
         <footer id="xidoFoot"></footer>
       </div><!--// #footerWrap-->

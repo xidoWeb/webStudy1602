@@ -6,6 +6,13 @@
   display: block;
 }
 
+#wrap #banner > ol > li span {
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
 #wrap {
   width: 100%;
   height: 970px;
@@ -77,6 +84,8 @@
   background-color: #CDCDCD;
   overflow: hidden;
   position: relative;
+  /* indegator */
+  /* banner image*/
 }
 
 #wrap #banner > .banBtn {
@@ -101,6 +110,44 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+#wrap #banner input[name="inde"] {
+  display: none;
+}
+
+#wrap #banner > ol {
+  width: 46px;
+  height: 12px;
+  position: absolute;
+  z-index: 100;
+  right: 90px;
+  bottom: 30px;
+}
+
+#wrap #banner > ol > li {
+  width: 12px;
+  height: 100%;
+  margin-right: 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #FF0066;
+  float: left;
+  box-shadow: 1px 1px 1px #575757;
+}
+
+#wrap #banner > ol > li:hover {
+  background-color: #CDCDCD;
+}
+
+#wrap #banner > ol > li:nth-child(3) {
+  margin-right: 0;
+}
+
+#wrap #banner > ol > li > label {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 #wrap #banner > ul {
@@ -131,8 +178,88 @@
 }
 
 #wrap #container {
-  height: 360px;
+  width: 900px;
+  min-height: 320px;
+  height: auto;
+  padding: 20px 30px;
   background-color: #FF0066;
+}
+
+#wrap #container .info_01 {
+  width: 100%;
+  height: auto;
+}
+
+#wrap #container .info_01 .infoTop {
+  width: 100%;
+  height: 22px;
+}
+
+#wrap #container .info_01 .infoTop > h3 {
+  width: 60px;
+  height: 100%;
+  padding: 0 5px;
+  text-align: center;
+  float: left;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-style: italic;
+}
+
+#wrap #container .info_01 .infoTop > .line {
+  width: calc(100% - 70px - 42px);
+  height: 18px;
+  border-bottom: 1px solid #575757;
+  border-color: #FFFFFF;
+  float: left;
+}
+
+#wrap #container .info_01 .infoTop > .more {
+  width: 22px;
+  height: 100%;
+  float: right;
+  margin: 0 10px;
+}
+
+#wrap #container .info_01 .infoTop > .more > a {
+  transition: transform 0.5s ease;
+  font-size: 1.375rem;
+  color: #FFFFFF;
+}
+
+#wrap #container .info_01 .infoTop > .more > a:hover {
+  transform: rotate(45deg);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#wrap #container .info_01 .infoNar {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 16px;
+  -webkit-display: flex;
+  -epub-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+
+#wrap #container .info_01 .infoNar .infoAll {
+  width: 50%;
+  height: 280px;
+  background: #acc;
+  -webkit-flex: 1;
+  flex: 5;
+}
+
+#wrap #container .info_01 .infoNar .infoText {
+  width: 50%;
+  height: 280px;
+  background: #fcc;
+  -webkit-flex: 1;
+  flex: 1;
 }
 
 #wrap #footerWrap {
@@ -158,5 +285,29 @@
 }
 
 .banBtn_02:hover ~ ul > li:first-child {
+  margin-left: calc(-100% / 3);
+}
+
+#indi_01:checked ~ ol > li:nth-child(1) > label {
+  background-color: #575757;
+}
+
+#indi_02:checked ~ ol > li:nth-child(2) > label {
+  background-color: #575757;
+}
+
+#indi_03:checked ~ ol > li:nth-child(3) > label {
+  background-color: #575757;
+}
+
+#indi_01:checked ~ ul > li:first-child {
+  margin-left: calc(100% / 3);
+}
+
+#indi_02:checked ~ ul > li:first-child {
+  margin-left: 0;
+}
+
+#indi_03:checked ~ ul > li:first-child {
   margin-left: calc(-100% / 3);
 }

@@ -2,6 +2,8 @@
 
 // index.scss
 %link{width: 100%; height: 100%; display: block;}
+%hidden{width: 0; height: 0;display: block; overflow: hidden;}
+
 #wrap {width: 100%; height: 970px;
   >*{width: 960px; margin: 0 auto;}
   >#headerWrap{width: 100%; height:60px;
@@ -33,6 +35,24 @@
       >button{width: 100%; height: 100%; cursor: pointer;}
       
       }// .banBtn
+    /* indegator */
+    input[name="inde"]{display: none;}
+    >ol{ width:46px; height: 12px;
+      position: absolute; z-index:100; right:90px; bottom:30px;
+      >li{width: 12px; height: 100%; margin-right:5px; 
+          border-radius:50%; overflow: hidden; 
+          background-color:$main;float: left;
+          box-shadow:1px 1px 1px $sub2;
+        &:hover{background-color:$sub1;}
+        &:nth-child(1){}
+        &:nth-child(2){}
+        &:nth-child(3){margin-right: 0;}
+        >label{width: 100%; height: 100%; display: block;}
+        span{@extend %hidden;}
+      } // li
+    } // ol
+    
+    /* banner image*/
     >ul{width:300%; height: 100%; margin-left:-100%;
       li{width:calc(100% / 3); float: left; height:inherit;
         text-align: center; line-height: 430px; font-size:5em;}
@@ -42,7 +62,43 @@
     }// ul
   }// #banner
   
-  #container {height: 360px; background-color:$main;}
+  
+  
+  #container {width:900px; min-height:320px; height:auto; 
+    padding:20px 30px; background-color:$main;
+      .info_01 {width: 100%; height:auto; 
+        
+      .infoTop {width: 100%; height: 22px;    
+         >h3 {width: 60px; height: 100%; padding:0 5px; text-align:center; float:left; font-size:1.2rem; color:$white; font-style:italic;}
+        >.line{width:calc(100% - 70px - 42px); height: 18px; 
+          border-bottom:$line; border-color:$white; float: left;}
+         >.more {width: 22px; height: 100%; float: right; margin:0 10px;
+          >a {transition:transform 0.5s ease;
+            font-size:1.375rem; color:$white;
+           &:hover{transform:rotate(45deg);
+              color:$white; text-decoration: none;}
+            }//a
+          }//.more
+        }//.infoTop
+     
+      .infoNar { width: 100%; height:auto; background-color:rgba(0,0,0,0.3);
+          margin-top: 16px; 
+//        벤더프리픽스 : 표준이 아니거나, 브라우저에 기능이 있지만 공식적으로 배포되지 않은 상태일때 강제로 실행되게 만드는 방법
+        -webkit-display:flex;// 크롬, 사파리, 스윙
+        -epub-display:flex;// 전자책
+        -moz-display:flex;// 파이어폭스
+        -ms-display:flex;// ms
+        -o-display:flex;// 오페라
+        display:flex;
+//        &::before, &::after{content:""; display: block; clear: both;}
+      .infoAll {width:50%; height:280px; background:#acc;
+        -webkit-flex:1; flex:5;}
+      .infoText {width:50%; height:280px;background:#fcc; 
+        -webkit-flex:1; flex:1;}
+        }// .infoNar
+        
+      }// .info_01
+  }// #container
   
   #footerWrap{width: 100%; height: 120px;
     background-color:$sub2;    
@@ -56,7 +112,12 @@
 #banner ul>li{transition:all 2s ease;}
 .banBtn_01:hover ~ ul>li:first-child{margin-left:calc(100% / 3);}
 .banBtn_02:hover ~ ul>li:first-child{margin-left:calc(-100% / 3);}
-
+#indi_01:checked ~ ol>li:nth-child(1)>label{background-color:$sub2;}
+#indi_02:checked ~ ol>li:nth-child(2)>label{background-color:$sub2;}
+#indi_03:checked ~ ol>li:nth-child(3)>label{background-color:$sub2;}
+#indi_01:checked ~ ul>li:first-child{margin-left:calc(100% / 3);}
+#indi_02:checked ~ ul>li:first-child{margin-left:0;}
+#indi_03:checked ~ ul>li:first-child{margin-left:calc(-100% / 3);}
 
 
 
