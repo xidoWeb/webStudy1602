@@ -36,10 +36,29 @@ $source: "../img/all/header/";
         }// fieldset
       } //form
     }// .sitemap
-    #xidoNav{width: 800px; height: 30px; background-color: #0ff;
-      border-bottom:$line; right:10px; bottom:-31px;
-      position: absolute; z-index: 1000;
-      margin-top:10px;} 
+    #xidoNav{width: 800px; height: 30px;border-bottom:$line; right:10px; 
+             bottom:-31px;position: absolute; z-index: 1000;margin-top:10px;
+      >ul{width: 100%; height: 100%;
+        >li{width:auto; height: 100%; float: left; 
+          margin-right:50px; margin-right:3.125rem;
+          &:first-child{margin-left: 20px; margin-left:1.25rem;}
+          &:last-child{margin-right:0;}
+          >a{font-size:1.167rem; font-weight:bold; color:$sub2; line-height:1.875;
+             letter-spacing:-0.0625rem;
+            &:hover{color:$main; text-decoration:none;}
+            }//a
+          }//li
+        }//ul
+      }// #xidoNav 
     }// #xidoHead
     
   }// #headerWrap
+
+
+
+
+
+
+
+
+

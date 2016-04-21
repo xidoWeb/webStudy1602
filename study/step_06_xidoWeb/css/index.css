@@ -137,13 +137,35 @@
   #headerWrap #xidoHead #xidoNav {
     width: 800px;
     height: 30px;
-    background-color: #0ff;
     border-bottom: 1px solid #575757;
     right: 10px;
     bottom: -31px;
     position: absolute;
     z-index: 1000;
     margin-top: 10px; }
+    #headerWrap #xidoHead #xidoNav > ul {
+      width: 100%;
+      height: 100%; }
+      #headerWrap #xidoHead #xidoNav > ul > li {
+        width: auto;
+        height: 100%;
+        float: left;
+        margin-right: 50px;
+        margin-right: 3.125rem; }
+        #headerWrap #xidoHead #xidoNav > ul > li:first-child {
+          margin-left: 20px;
+          margin-left: 1.25rem; }
+        #headerWrap #xidoHead #xidoNav > ul > li:last-child {
+          margin-right: 0; }
+        #headerWrap #xidoHead #xidoNav > ul > li > a {
+          font-size: 1.167rem;
+          font-weight: bold;
+          color: #575757;
+          line-height: 1.875;
+          letter-spacing: -0.0625rem; }
+          #headerWrap #xidoHead #xidoNav > ul > li > a:hover {
+            color: #FF0066;
+            text-decoration: none; }
 
 #banner {
   /* indegator */
@@ -298,3 +320,43 @@
   height: 120px;
   margin: 0 auto;
   background-color: #575757; }
+  #footerWrap > #xidoFoot > * {
+    background-color: #0af; }
+  #footerWrap > #xidoFoot > h2 {
+    width: 82px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+    float: left; }
+  #footerWrap > #xidoFoot > .addBox {
+    width: 430px;
+    height: 80px;
+    margin-left: 88px;
+    margin-top: 20px;
+    float: left; }
+    #footerWrap > #xidoFoot > .addBox .add {
+      width: 100%;
+      height: 20px; }
+      #footerWrap > #xidoFoot > .addBox .add li {
+        width: auto;
+        height: 12px;
+        float: left;
+        border-right: 1px solid #fff;
+        padding: 0 10px;
+        margin-top: 6px; }
+        #footerWrap > #xidoFoot > .addBox .add li:first-of-type {
+          padding-left: 0; }
+        #footerWrap > #xidoFoot > .addBox .add li:last-of-type {
+          border: 0;
+          padding-right: 0; }
+        #footerWrap > #xidoFoot > .addBox .add li a {
+          color: #CDCDCD;
+          line-height: 1.25;
+          display: inline-block;
+          letter-spacing: -0.06rem;
+          margin-top: -3px; }
+  #footerWrap > #xidoFoot > .etc {
+    width: 134px;
+    height: 100px;
+    margin-right: 70px;
+    float: right; }
