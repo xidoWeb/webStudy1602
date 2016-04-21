@@ -1,20 +1,22 @@
 /*		 reset CSS */
 
-		*, html, body, h1, h2, h3, h4, h5, h6, p, div, img{
-			margin: 0; padding:0; border:0; vertical-align: top; 	color:#333; 
-			font:100%/1.2 "myriad pro", arial, "noto sans", nanumGothic, dotum, sans-serif;}
-		ul, ol, li{list-style: none;}
-		a{text-decoration: none; color:#777;}
-		a:hover{text-decoration: underline; color:#d05;}
-		table,tr,td,th,thead,tbody,tfoot{border:1px solid #777; 
-			border-spacing: 0; border-collapse: collapse;}
-		address{font-style:normal;}
-		input, textarea{border:1px solid #777; text-indent:5px;}
-		input[type="submit"],
-		input[type="reset"],
-		input[type="image"],
-		input[type="button"]{border:0}
-		input:focus{background-color:#fda;}
+*, html, body, h1, h2, h3, h4, h5, h6, p, div, img{
+    margin: 0; padding:0; border:0; vertical-align: top; 	color:#333; 
+    font:100%/1.2 "myriad pro", arial, "noto sans", nanumGothic, dotum, sans-serif;}
+ul, ol, li{list-style: none;}
+a{text-decoration: none; color:#777;}
+a:hover{text-decoration: underline; color:#d05;}
+table,tr,td,th,thead,tbody,tfoot{border:1px solid #777; 
+    border-spacing: 0; border-collapse: collapse;}
+address{font-style:normal;}
+input, textarea{border:1px solid #777; text-indent:5px;}
+input[type="submit"],
+input[type="reset"],
+input[type="image"],
+input[type="button"]{border:0}
+input:focus{background-color:#fda;}
+*:focus{outline:2px solid #fa0; position: relative; z-index:5000;}
+
 
 /*html5*/
 header, article, nav, aside, footer, section, figure, figcation{ 
@@ -34,10 +36,8 @@ display: block;}
 .me-lastRight{margin-right:0; padding-right:0; border-right:0;}
 .me-clearfix::after, .me-clearfix::before{content:""; display:block; clear:both;}
 h2,h3,h4,h5,h6{width: 0; height: 0; overflow: hidden; font-size:0;}
-.me-hidden{width: 0; height: 0; display: block; overflow: hidden;}
 .me-link a{background-repeat: no-repeat; display: block;width: 100%; height: 100%;}
-a>span{width: 0; height: 0; display: block; overflow: hidden;}
-
+a>span, legend, .me-hidden{width: 0; height: 0; display: block; overflow: hidden;}
 
 
 
