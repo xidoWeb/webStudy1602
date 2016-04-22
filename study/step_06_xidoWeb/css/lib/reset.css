@@ -1,8 +1,9 @@
 /*		 reset CSS */
-
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:700,400);
 *, html, body, h1, h2, h3, h4, h5, h6, p, div, img{
     margin: 0; padding:0; border:0; vertical-align: top; 	color:#333; 
-    font:100%/1.2 "myriad pro", arial, "noto sans", nanumGothic, dotum, sans-serif;}
+    font:100%/1.2 'Noto Sans KR','Merriweather Sans', 'myriad pro', arial, "noto sans", nanumGothic, dotum, sans-serif;}
 ul, ol, li{list-style: none;}
 a{text-decoration: none; color:#777;}
 a:hover{text-decoration: underline; color:#d05;}
