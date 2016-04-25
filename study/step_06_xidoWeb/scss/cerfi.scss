@@ -22,7 +22,7 @@
     .telCheck {
       width: calc(100% - 18px); height: 56px; background-color:$sub1; 
       padding: 20px 9px; margin-bottom:10px;
-      >dl{width: 100%; height: 20px; background-color: #fff;
+      >dl{width: 100%; height: 20px; 
           &.telNumber{margin-bottom: 18px;
             >dd{
               select{width: 75px; height: 100%; float:left; border:$line; 

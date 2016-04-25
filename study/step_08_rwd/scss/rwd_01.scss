@@ -1,0 +1,53 @@
+// rwd_01.scss
+/* 반응형 웹 기초 테스트*/
+
+*{margin: 0;padding: 0;border: 0;vertical-align: top;color: #333;text-decoration: none;}
+
+body{background-color:#fac;}
+#container {width:960px; height: auto; margin: 0 auto; }
+  #testHead {widows: 100%; height: 200px; 
+    background-color: #987; }// #testHead
+  #testSide {width: 100%; height: 100px; 
+    background-color: #79a; }// #testSide
+  #testContent {width: 100%; height: 500px; 
+    background-color: #a79; }// #testContent
+  #testFoot {width: 100%; height: 100px; 
+    background-color: #777;}// #testFoot
+
+@media screen and (min-width:64.0625em) {
+body,html{height: 100%; background-color: #aaa;}
+#container {width: 100%; height: 100%; }// #container
+  #testHead {width: 30%; height: 100%; 
+    background-color:#987;float:left;}
+  #testSide {width: 70%; height: 100px; 
+    background-color: #79a;float:left;}
+  #testContent {width:70%; height:calc(100% - 200px);
+    background-color:#a79;float:left; display: none;}
+  #testFoot {width: 70%; height: 100px; 
+    background-color:#777;float:left;}
+  
+  
+}
+
+@media screen and (max-width:64em){
+  body{background-color: #cfa;}
+}
+
+@media screen and (max-width:48em){
+  body{background-color:#fca;}
+}
+
+@media screen and (max-width:40em) {
+  body{background-color: #7fa;}
+}
+@media screen and (max-width:30em) {
+  body{background-color: #a7f;}
+}
+
+
+
+
+
+
+
+
