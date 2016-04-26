@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/lib/reset.css" />
+	<script src="js/jquery/jquery-1.12.2.min.js"></script>
+	<script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery/jquery-ui.min.js"></script>
+	<title>Document</title>
+	<style>
+		#wrap{width: 80%; height: 300px; margin: 0 auto; background-color: #ddd;}
+		#show{width:300px; height:200px; background-color:#0af; float: left;
+			display: none;}
+		#hide{width:300px; height:200px; background-color:#f7f; float: right;}
+		
+	</style>
+	<script>
+		$(document).ready(function(){
+		// 선택자 작성하기!!! 	$() :  ()표기안에 "" 붙이고 css에서 사용하는 선택자 그대로
+		// 선택자 이후 : .을 붙이고 취하고자 하는 행동(메소드)을 붙이기
+			var show, hide;
+					show = $("#show");
+					hide = $("#hide");
+			
+//			var show = $("#show"),
+//					hide = $("#hide");
+			
+			
+			hide.on("click", function(){
+				show.slideDown(500);
+				hide.slideUp(500);
+			});
+			show.on("click", function(){
+				show.fadeOut(500);
+				hide.fadeIn(500);
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="show">보이기</div>
+		<div id="hide">사라지기</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
