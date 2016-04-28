@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+  <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./js/jquery/jquery-ui.min.js"></script>
+  <title>each</title>
+  <style>
+    li{width:300px; height:50px; border:1px solid #777; }
+  </style>
+  <script>
+    $(function(){
+      var link = ["http://naver.com",
+                  "http://daum.net",
+                  "http://google.com",
+                  "http://greenart.co.kr",
+                  "http://w3schools.com",
+                  "http://ui.daum.net",
+                  "http://albamon.co.kr",
+                  "http://gdweb.co.kr",
+                  "http://behance.net",
+                  "http://cssawds.com"];
+      
+      $("li").on("click", function(){
+        $(this).each(function(){
+          $(this).css({backgroundColor:"#f60"});
+          $(this).html('<a href="">링크</a>');
+          $(this).find("a").text('글씨 입력/추가~~~')
+                 .attr("href", link.each(link.index() ) ); 
+          });
+      });
+      
+//      $("li").each().on("click", function(){
+//        $(this).css({backgroundColor:"#f60"});
+//      });
+    });
+  </script>
+</head>
+<body>
+  <ul>
+    <li>list_01</li>
+    <li>list_02</li>
+    <li>list_03</li>
+    <li>list_04</li>
+    <li>list_05</li>
+    <li>list_06</li>
+    <li>list_07</li>
+    <li>list_08</li>
+    <li>list_09</li>
+    <li>list_10</li>
+  </ul>
+</body>
+</html>
