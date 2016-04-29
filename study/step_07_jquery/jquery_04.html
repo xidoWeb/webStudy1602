@@ -30,20 +30,29 @@
     
       var i;
       for(i=0; i<=link.length ; i++){
-//        console.log(link[i]);
-//        console.log(site[i]);
-        
-//        $("li").eq(i).text(site[i]);
+
       $("ul").append("<li><a>")
              .find('li').eq(i)
              .find('a')
              .attr("href", link[i])
              .text(site[i]);
-       
-          
-
+        
+//        $("ul").append("<li><a>");
+//        $("li").eq(i).find('a').attr("href", link[i]);  
+//        $("li").eq(i).find('a').text(site[i]);  
         };
-//     
+//      $("li").on("click", function(){
+//        $(this).each(function(){
+//          $(this).css({backgroundColor:"#f60"});
+//          $(this).html('<a href="">링크</a>');
+//          $(this).find("a").text('글씨 입력/추가~~~')
+//                 .attr("href", link.index().each().html() ); 
+//          });
+//      });
+//      
+//      $("li").each().on("click", function(){
+//        $(this).css({backgroundColor:"#f60"});
+//      });
     });
   </script>
 </head>
