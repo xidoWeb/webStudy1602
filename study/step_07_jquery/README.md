@@ -84,6 +84,48 @@ var box = null, // null
 자기호출함수는 해석과 동시에 실행되는 코드블럭
 
 
+---
+### 문법
+
+#### for
+> for문은 여러개의 반복효과를 가질때 사용하는 기능
+  for(최초의 변수명=최초값; 변수명 >= 최종값; 연산값){
+      console.log(변수명);
+    };
+
+```javascript
+  var sum = 0;
+  for(var i = 0; i >= 100; i = i+1){
+    console.log(i);
+    sum += i;    // sum의 변수에 0~100까지의 값을 더한 수를 저장
+  }
+```
+// i = i+1 ;   j = j-10
+// i += 1 ;    j -= 10
+// i++  |  ++i;
+
+var i = 5;
+console.log(++i)  // 6  
+console.log(i++)  // 6(+1)
+console.log(i++)  // 7(+1)
+console.log(i++)  // 8(+1)
+console.log(++i)  // 10
+console.log(i)    // 10
+console.log(i--)  // 10(-1)
+console.log(i--)  // 9(-1)
+console.log(--i)  // 7
+console.log(i)    // 7
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -22,33 +22,34 @@
                   "http://behance.net",
                   "http://cssawds.com"];
       
-      $("li").on("click", function(){
-        $(this).each(function(){
-          $(this).css({backgroundColor:"#f60"});
-          $(this).html('<a href="">링크</a>');
-          $(this).find("a").text('글씨 입력/추가~~~')
-                 .attr("href", link.each(link.index() ) ); 
-          });
-      });
+      var site = ["네이버", "다음", "구글", "그린컴",
+                  "w3스쿨", "ui.daum", "알바몬",
+                  "gdweb", "behance", "cssawds"];
       
-//      $("li").each().on("click", function(){
-//        $(this).css({backgroundColor:"#f60"});
-//      });
+      
+    
+      var i;
+      for(i=0; i<=link.length ; i++){
+//        console.log(link[i]);
+//        console.log(site[i]);
+        
+//        $("li").eq(i).text(site[i]);
+      $("ul").append("<li><a>")
+             .find('li').eq(i)
+             .find('a')
+             .attr("href", link[i])
+             .text(site[i]);
+       
+          
+
+        };
+//     
     });
   </script>
 </head>
 <body>
   <ul>
-    <li>list_01</li>
-    <li>list_02</li>
-    <li>list_03</li>
-    <li>list_04</li>
-    <li>list_05</li>
-    <li>list_06</li>
-    <li>list_07</li>
-    <li>list_08</li>
-    <li>list_09</li>
-    <li>list_10</li>
+    
   </ul>
 </body>
 </html>
