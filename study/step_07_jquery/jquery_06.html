@@ -34,10 +34,14 @@
        
        headBox
          .on("mouseenter", function(){
-         box.slideDown(timing);
+           box.stop().slideDown(timing, function(){
+             box.animate({"background-color":"#d06"},timing)
+         });
        })
          .on("mouseleave", function(){
-         box.slideUp(timing);
+           box.stop().slideUp(timing, function(){
+             box.css({"background-color":"#0af"})
+         });
        });
      })// jquery
        
