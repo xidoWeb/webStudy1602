@@ -32,15 +32,21 @@
   </style>
   <script>
     $(function(){
-//      $("#gnb").find("dl").hide();
-      $("#gnb").find("h2").on("click", function(){
-        $(this).next("dl").stop().toggleClass("menu");
+      var gnb = $("#gnb");
+      var gnbDl = gnb.next("dl");
+      var gnbDt = gnb.find("dt");
+      var gnbDd = gnb.find("dd");
+      
+      gnb.find("h2").on("click", function(){
+        var $this = $(this);
+        $this.next("dl").stop().toggleClass("menu");
       });
       
-      $("#gnb").find("dd").hide();
-      $("#gnb").find("dt").on("click", function(){
-        $("#gnb").find("dd").stop().slideUp();
-        $(this).next("dd").stop().slideToggle();
+      gnbDd.hide();
+      gnbDt.on("click", function(){
+        var $this = $(this);
+        gnbDd.stop().slideUp();
+        $this.next("dd").stop().slideToggle();
       });
       
     });
