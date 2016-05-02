@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="./css/lib/reset.css">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.css" />
+  <title>Document</title>
+  <style>
+    .container{width: 960px;height: auto;margin: 0 auto;background-color: #ccc;}
+    #headBox{width: 100%;height: auto;}
+    h1{width: 100%;text-align:center; padding-bottom:10px; border-bottom: 1px solid #333; font-size: 1.3em; font-weight: bold;}
+    #gnb{width: 40%;height: auto; position: relative;}
+    #gnb>h2{width: 20px;height: 20px; float: left; 
+            margin-right:5px; cursor: pointer;}
+    #gnb>h2>i{font-size:1.5rem;}
+    #gnb>h2>span{width: 0;height: 0;display: block;overflow: hidden;}
+    #gnb>dl{width: 400px;height:auto; float: left; border:3px solid #f07;
+        position: absolute; z-index: 100; top: 0; left: 40px;
+        box-shadow: 2px 2px 2px #333;
+      }
+    #gnb>dl>dt{width: 100%;height: 30px;text-align: center;line-height: 30px; background-color: #0af; cursor: pointer; transition:all 0.5s ease;}
+    #gnb>dl>dt{background-color: #3cf;}
+    #gnb>dl>dd{width: 100%;height:150px; padding-top:10px; background-color: #cdcdaa;}
+  </style>
+  <script>
+    $(function(){
+      
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header id="headBox">
+      <h1>슬라이딩메뉴만들기</h1>
+      <nav id="gnb">
+        <h2><i class="fa fa-bars" aria-hidden="true"></i><span>전체메뉴</span></h2>
+        <dl>
+          <dt role="button">제목</dt>
+          <dd>메뉴내용01</dd>
+          <dt role="button">제목</dt>
+          <dd>메뉴내용02</dd>
+          <dt role="button">제목</dt>
+          <dd>메뉴내용03</dd>
+        </dl>
+      </nav>
+    </header>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
