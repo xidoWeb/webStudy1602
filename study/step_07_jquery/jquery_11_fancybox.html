@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="./css/lib/reset.css">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.css" />
+  <title>Document</title>
+<!--  
+  <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+  <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./js/jquery/jquery-ui.min.js"></script>
+-->
+  
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="./fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+<!--
+  <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+  
+-->
+  
+  
+  
+  
+  
+  
+  <style>
+    html,body{height: 100%;}
+/*    #popupBox1{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);
+      position: fixed; z-index: 100; top: 0; left: 0;}
+    .popup{width: 500px; height: 200px; background-color:rgba(255,255,255,0.7);
+      position:absolute; top: 50%; left:50%; margin-left:-250px; margin-top:-100px;
+      border-radius:5px; box-shadow:2px 2px 2px #fa0 inset;}
+    .popup>button{width:30px; height:30px; border-radius:100%; 
+      border:2px solid #fff; background-color:#333;
+      position: absolute; top: -15px; right: -15px; cursor: pointer; z-index: 100;
+       transition: all 1s;}
+    .popup>button:hover{transform: rotate(90deg)}
+    .popup>button>i{font-size: 25px; color:#fff; }
+    .popup>button>span{width: 0; height: 0; display: block; overflow: hidden;}
+    .cutton{width:0; height:0; background-color: rgba(255, 170, 230,0.8); 
+      position: absolute; left: 50%; top:50%;
+      z-index: 50; border-radius:100%;  transition:all 1s ease;}
+    .popup:hover> .cutton{width: 100%; height: 100%;
+      margin-left:-250px; margin-top: -100px;border-radius: 0;}
+    .contentPopup{width: 100%; height: 100%;}
+    .contentPopup>p:nth-of-type(2){color:#fa0; font-size: 1.3em;}
+    
+    #popupBox2{width: 100%; height: 100px;}
+    #popupBox2>.contentPopup{width: calc(100% - 120px); height: 80px; float: left;
+      margin-top:10px; margin-left: 10px; background-color: #cdcdcd;}
+    .close2{width: 40px; height: 40px; border: 1px solid #0af; 
+      float: right; margin:28px; background-color:transparent; cursor: pointer;}
+    .close2>i{font-size: 24px;padding:3px;}
+    .close2>span{width: 0;height: 0; display: block;overflow: hidden;}
+    
+    
+    #wrap{width: 100%; height: 3000px; background-color: #95d;
+      padding-top: 50px;}
+    #headBox{width: 50%; height:auto; margin-left: 25%; }
+    .gallery{width: 90%; height: 70px; margin-left: 5%;}
+    .gallery>h2{width: 100px; height: 30px; 
+      font-size: 1.3rem; color:#fff; font-weight: bold;}
+    .gallery>ul{width: 100%; height: 40px;}
+    .gallery li{width: calc(100% / 5 - 5px); height: 100%; float: left; 
+      padding:0 2px; border-right: 1px solid #fff;}
+    .gallery li:last-child{border-right: 0;}
+    .gallery li>a{width: 100%; height: 100%; display: block; overflow: hidden;}
+    .gallery li>a:hover >img{margin-top:-40px;}
+    .gallery li>a>img{width: 100%; transition:all 1s linear;}
+  </style>
+  <script>
+    $(function(){
+      $(".fancyTest").fancybox();
+    });
+  </script>
+</head>
+<body>
+  <div class="gallery">
+    <a href="./img/gallery/j02_big.jpg" class="fancyTest" rel="group">
+     <img src="./img/gallery/j02.jpg" alt="">
+    </a>
+    <a href="./img/gallery/j04_big.jpg" class="fancyTest" rel="group">
+     <img src="./img/gallery/j04.jpg" alt="">
+    </a>
+    <a href="./img/gallery/j06_big.jpg" class="fancyTest" rel="group">
+     <img src="./img/gallery/j06.jpg" alt="">
+    </a>
+    <a href="./img/gallery/j08_big.jpg" class="fancyTest" rel="group">
+     <img src="./img/gallery/j08.jpg" alt="">
+    </a>
+    <a href="./img/gallery/j10_big.jpg" class="fancyTest" rel="group">
+     <img src="./img/gallery/j10.jpg" alt="">
+    </a>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
