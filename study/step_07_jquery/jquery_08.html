@@ -16,13 +16,15 @@
     h1{width: 100%;text-align:center; padding-bottom:10px; border-bottom: 1px solid #333; font-size: 1.3em; font-weight: bold;}
     #gnb{width: 40%;height: auto; position: relative;}
     #gnb>h2{width: 20px;height: 20px; float: left; 
-            margin-right:5px; cursor: pointer;}
+            margin-right:5px; cursor: pointer;
+            position: absolute; z-index:150; top: 0; left: 0;}
     #gnb>h2>i{font-size:1.5rem;}
     #gnb>h2>span{width: 0;height: 0;display: block;overflow: hidden;}
     #gnb>dl{width: 400px;height:auto; float: left; border:3px solid #f07;
-        position: absolute; z-index: 100; top: 0; left: 40px;
-        box-shadow: 2px 2px 2px #333;
-      }
+        position: absolute; z-index: 100; top: 0; left:-500px;
+        box-shadow: 2px 2px 2px #333; transition:all 1s;}
+    .menu{left:40px !important;}
+    
     #gnb>dl>dt{width: 100%;height: 30px;text-align: center;line-height: 30px;
       border-bottom: 1px solid  #777;background-color: #0af; cursor: pointer; transition:all 0.5s ease;}
     #gnb>dl>dt{background-color: #3cf;}
@@ -30,9 +32,9 @@
   </style>
   <script>
     $(function(){
-      $("#gnb").find("dl").hide();
+//      $("#gnb").find("dl").hide();
       $("#gnb").find("h2").on("click", function(){
-        $(this).next("dl").stop().fadeToggle();
+        $(this).next("dl").stop().toggleClass("menu");
       });
       
       $("#gnb").find("dd").hide();
