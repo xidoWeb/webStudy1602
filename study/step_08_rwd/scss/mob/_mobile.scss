@@ -1,0 +1,49 @@
+@media screen and (max-width:640px){
+ 
+    #rwdHead {width:calc(100% - 40px); height: 100px; border-bottom:$line; 
+      padding:0 20px; background-color:$white; position: relative;}
+    h1 {width: 224px; height: 45px; position: absolute; z-index:500;
+      top: 50%; left: 50%; margin-top:-22.5px; margin-left:-112px;
+        background-color:$sub2;
+      a {@include link;}
+    }// h1
+  
+    #gnb {
+      >h2 {  
+        i{}
+      }// h2
+      ul {
+        li {
+          a {
+            &:hover{            }
+          }//a
+        }//li
+      }// ul
+    }// #gnb
+  
+  #sitemap {
+    >h2{
+      i{}
+    }// h2
+    >ul {
+      >li {    }
+    }// ul
+  }// #sitemap
+  
+    #rwdContent {width:calc(100% - 40px); height:62.5vw; 
+      padding:0 20px; background-color:$sub3;}
+    #rwdFoot {width:calc(100% - 40px); height: 30px; 
+      padding:0 20px; background-color:$sub1;}
+} // mobile.scss
+
+//  크기의 상황에 따라 변하는 단위: vw, vh;
+// vw : view width - 크기값(세로) / 기준크기(가로) * 100
+// vh : view height - 크기값(가로) / 기준크기(세로) * 100
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+$main:#03AAA0;
+$sub1:#90A4B2;
+$sub2:#588FE3;
+$sub3:#75C4E8;
+$point:#F24F3E;
+$black:#000;
+$white:#fff;
+$line:1px solid $black;
+
+@mixin link{
+  width:100%; height: 100%; display: block; background-repeat:no-repeat;
+  >span{width: 0; height: 0; display: inherit; overflow: hidden;}  
+}
