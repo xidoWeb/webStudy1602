@@ -2,17 +2,19 @@
  
     #rwdHead {width:calc(100% - 40px); height: 100px; border-bottom:$line; 
       padding:0 20px; background-color:$white; position: relative;}
-    h1 {width: 224px; height: 45px; position: absolute; z-index:500;
-      top: 50%; left: 50%; margin-top:-22.5px; margin-left:-112px;
+    h1 {width: 35%;/*224px*/ min-width:150px; height: 7.03vw;/*45px*/ min-height:30px;
+      position: absolute; z-index:500;
+//      @if{}
+      top: 0; left: 50%; margin-left:-112px;
         background-color:$sub2;
       a {@include link;}
     }// h1
   
-    #gnb {
-      >h2 {  
+    #gnb {width: 60px; height: 55px; float: left; background-color:#acc;
+      >h2 { width: 60px; height: 55px; 
         i{}
       }// h2
-      ul {
+      ul {display: none;
         li {
           a {
             &:hover{            }
@@ -21,11 +23,11 @@
       }// ul
     }// #gnb
   
-  #sitemap {
-    >h2{
+  #sitemap {width: 60px; height: 55px; float: right; background-color:#acc;
+    >h2{width: 60px; height: 55px;
       i{}
     }// h2
-    >ul {
+    >ul {display: none;
       >li {    }
     }// ul
   }// #sitemap
