@@ -1,10 +1,25 @@
 @media screen and (min-width:641px) and (max-width:1024px){
   // #rwdHead ------------------------------------------------
-    #rwdHead {width:87.5%; height: 120px; border-bottom:$line; 
-      padding:0 6.25%; background-color:$white;}
+    #rwdHead {width:92%; height: 120px; border-bottom:$line; 
+      padding:0 4%; background-color:$white;}
     h1 {width: 155px; height: 32px; background-color:$sub2; float: left; margin-top: 66px;
       a {@include link;}
     }// h1
+  
+  #gnb{width: 53.9%; min-width:360px; float: left; margin-top:66px; margin-left:5%; height: 30px; background-color: $sub1;}
+  #sitemap{width:100px; height:40px; margin-top:66px; float: right;
+    >ul{width: 100%; height: 100%;
+      >li{width: 50%; height: 100%; float: left;
+        >a{width: 40px; height: 40px; display: block;
+            border-radius: 50%; background-color:$point;}
+        >span{width: 250%; height: 50%; margin-top:-80px; margin-left:-125%;
+          display: block; background-color:$sub1; text-align: center; padding: 10px;
+          opacity: 0; transition: all 0.5s ease;}
+        >a:hover + span{opacity: 1;}
+      }// li
+    }
+  }
+  #gnb>*{display: none;}
   
   
   // #rwdContent ------------------------------------------------
