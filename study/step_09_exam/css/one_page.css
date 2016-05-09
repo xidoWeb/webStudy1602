@@ -1,8 +1,8 @@
 html, body { height: 100%; }
 
-#container { width: 100%; }
+#container { width: 100%; height: 100%; }
 
-#headBox { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 500; background-color: rgba(0, 255, 170, 0.7); }
+#headBox { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 500; background-color: rgba(0, 255, 170, 0.3); }
 #headBox > h1 { width: 70px; height: 40px; float: left; margin: 30px; background-color: #fff; font-size: 1.3em; text-align: center; line-height: 40px; }
 #headBox > #gnb { width: calc(100% - 160px); height: 40px; float: right; margin: 30px; margin-left: 0; }
 #headBox > #gnb > ul { width: 100%; height: 100%; }
@@ -11,12 +11,14 @@ html, body { height: 100%; }
 #headBox > #gnb a { font-size: 1.2em; transition: all 0.3s; color: #333; line-height: 40px; }
 #headBox > #gnb a:hover { font-size: 1.3em; font-weight: bold; }
 
-#content_1 { height: 100%; }
+article, footer { height: calc(100% - 100px); width: 100%; line-height: 400px; text-align: center; font-size: 1.5em; }
 
-#content_2 { height: 100%; }
+#content_1 { background-color: #fac; margin-top: 100px; }
 
-#content_3 { height: 100%; }
+#content_2 { background-color: #acc; }
 
-#footBox { height: 100%; }
+#content_3 { background-color: #6ac; }
+
+#footBox { background-color: #f93; }
 
 /*# sourceMappingURL=one_page.css.map */
