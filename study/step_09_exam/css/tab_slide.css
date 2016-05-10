@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* ---------------------------------- 
+* 기본 디자인하기
+* ----------------------------------- */
+#headBox {
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  border-bottom: 1px solid #333; }
+  #headBox h1 {
+    width: 100px;
+    height: 40px;
+    background-color: #c9f;
+    float: left; }
+    #headBox h1 > a {
+      line-height: 40px;
+      font-size: 1.3em; }
+  #headBox > ul {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    float: right; }
+    #headBox > ul > li {
+      width: calc(100% / 3);
+      height: 100%;
+      float: left;
+      text-align: center; }
+      #headBox > ul > li > a {
+        line-height: 30px;
+        color: #57f; }
+
+#banner {
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  border: 1px solid  #777;
+  margin-top: 50px;
+  box-sizing: border-box;
+  position: relative; }
+  #banner > .btn {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 0;
+    z-index: 400;
+    transition: all 0.5s; }
+    #banner > .btn.left_btn {
+      left: 0; }
+    #banner > .btn.right_btn {
+      right: 0; }
+    #banner > .btn:hover {
+      background-color: rgba(255, 255, 255, 0.8); }
+    #banner > .btn button {
+      width: 100%;
+      height: 100%;
+      background-color: transparent; }
+    #banner > .btn:hover i {
+      transform: scale(2); }
+    #banner > .btn i {
+      font-size: 1.5em;
+      color: #57f;
+      transition: all 0.5s; }
+    #banner > .btn span {
+      width: 0;
+      height: 0;
+      display: block;
+      overflow: hidden; }
+  #banner > .banner_box {
+    width: 300%;
+    height: 100%;
+    margin-left: -100%;
+    /*overflow: hidden;*/ }
+    #banner > .banner_box > li {
+      width: calc(100% / 3);
+      height: 100%;
+      float: left;
+      line-height: 500px;
+      text-align: center;
+      color: #fff;
+      font-size: 3rem;
+      font-weight: bold; }
+    #banner > .banner_box > .banner_01 {
+      background-color: #135; }
+    #banner > .banner_box > .banner_02 {
+      background-color: #951; }
+    #banner > .banner_box > .banner_03 {
+      background-color: #294; }
+    #banner > .banner_box > .banner_04 {
+      background-color: #a0c; }
+
+/* ---------------------------------- 
+* tabs 메뉴 디자인하기
+* ----------------------------------- */
+/* ---------------------------------- 
+slide 디자인하기
+ ----------------------------------- */
+
+/*# sourceMappingURL=tab_slide.css.map */
