@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+  <link rel="stylesheet" href="./css/lib/normalize.css" />
+<!--  <link rel="stylesheet" href="./css/">-->
+  <!--[if lte IE 9]>
+    <script src="./js/dist/html5shiv.min.js"></script>
+    <script src="./js/dist/ie9.min.js"></script>
+  <![endif]-->
+  <script src="./js/dist/html5shiv.min.js"></script>
+  <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+  <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./js/jquery/jquery-ui.min.js"></script>
+  <title>Document</title>
+  <style>
+    body{height: 3000px;}
+    p{width: 100px; font-size: 1.5rem; font-weight: bold; position: fixed; top: 40px;
+        left:calc(50% - 50px); border-bottom: 1px solid;}
+    h2{width:80px; height:80px; border-radius:50%; text-align: center;
+      line-height: 50px; background-color:#ccc; font-size: 1.5em; 
+      position:absolute;}
+    h2:nth-of-type(1){color:#f09;margin:50px;top: 100px;left: 0;}
+    h2:nth-of-type(2){color:#479;margin:150px;top:50px;left: 100px;}
+    h2:nth-of-type(3){color:#a0f;margin:250px;top: 300px;left: 200px;}
+    h2:nth-of-type(4){color:#af0;margin:150px;top: 0;left: 30px;}
+  </style>
+  <script></script>
+</head>
+<body>
+  
+  <p>tet</p>
+  <h2 class="ht_1">h의 위치 확인 테스트</h2>
+  <h2 class="ht_2">h의 위치 확인 테스트</h2>
+  <h2 class="ht_3">h의 위치 확인 테스트</h2>
+  <h2 class="ht_4">h의 위치 확인 테스트</h2>
+  <script>
+    (function($){
+      var sTop = $(window).scrollTop();
+      $('p').text(sTop);
+        
+      for(var i=1; i<=4; i++){
+        $('.ht_'+i).text($('.ht_'+i).offset().top);
+      };
+      
+      $(window).on('scroll', function(){
+        var sTop = $(window).scrollTop();
+        
+        $('p').text(sTop);
+        if(sTop >= 500){
+          $('body').css({'background-color':'#0af'});
+          $('p').animate({'top': -500}, 200);
+        }else{          
+          $('body').css({'background-color':'transparent'});
+          $('p').animate({'top':50}, 200);
+        }
+      })
+    })(this.jQuery);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

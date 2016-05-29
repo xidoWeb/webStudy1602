@@ -1,0 +1,104 @@
+@import "./lib/basic.scss";
+//join.scss
+#joinContainer {
+  width: 618px; width: 38.625rem; 
+  height:auto; margin: 0 auto; background-color: $sub1;
+  h1 {@extend %hidden;}
+  form { width: 100%; height: 100%; }
+  fieldset {  
+    width: calc(100% - 8px); height:auto;
+    padding-left:0.5rem; padding-left:8px;
+    border-bottom:$line; padding-bottom:15px; margin-bottom:24px;
+    &.join_01{}
+    &.join_02{}
+    &.join_03{margin-bottom: 0; border: 0;}
+    &.join_04{height:40px; border: 0;}
+    >ul{width: 100%; height: 100%;
+      >li{width: 100%; height: 30px; margin-bottom: 10px;
+        background-color: #aaa;
+        >dl{width: 100%;height:100%;
+          >dt{width: 95px;height:100%; margin-right: 15px;
+            float: left; background-color: #fff;} 
+          >dd:nth-of-type(1){width:240px; height:100%; 
+            margin-right: 20px; float:left;
+            background-color: #fac;}//dd
+          >dd:nth-of-type(2){width:220px; height:100%;   
+            float:left;background-color: #fac;}//dd
+        }//dl
+      }//li
+    }// ul    
+  }// fieldset
+} // #joinContainer
+
+.jImg{background-image: url("../img/join/join_icon.png");
+      background-repeat: no-repeat;}
+
+
+fieldset{
+  >ul>li>dl>dt{ 
+    >i{width: 16px; height: 20px; float: left; display: block; 
+      margin-left: 7px; margin-top: 5px; background-color: #fa0;}
+    >label{width:60px; height:20px; margin-top:5px; display: block;
+        background-color: #0af;float: right;
+      >span{@extend %hidden;}
+    }
+  }// >ul>li>dl>dt  
+  >ul>li>dl>dd{ 
+    &:nth-of-type(1){
+      input{width: 100%; height: 100%; box-sizing:border-box;
+        border-radius:2px; line-height:30px;}
+    }
+    &:nth-of-type(2){
+      button{width: 100px; height: 100%; border-radius: 2px;
+        cursor: pointer;
+        >span{@extend %hidden;}
+      }
+    }
+  }// >ul>li>dl>dd
+}
+
+
+
+// design
+
+.joinBox_01{
+  dt{
+    i.jImg{background-position:-50px 0;}
+    label.jImg{background-position: -70px 0;}
+  }// dt
+  dd:nth-of-type(2){
+    button{background-position: -135px -160px;}
+  }// dd:nth_2
+}
+
+.joinBox_02{
+  dt{
+    i.jImg{background-position:-50px -20px;}
+    label.jImg{background-position: -70px -20px;}
+  }// dt
+  dd:nth-of-type(2){
+    >span{width: 100%; height: 20px; margin-top: 5px; 
+      display: block; background-position: -280px 0; }
+    i{@extend %hidden;}
+  }// dd:nth_2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

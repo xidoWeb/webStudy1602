@@ -1,0 +1,9 @@
+@media screen and (min-width:1025px){
+    #rwdHead {width:87.5%; height: 120px; border-bottom:$line; 
+      padding:0 6.25%; background-color:$white;}
+    #rwdContent {width:calc(100% - 40px); height:62.5vw; 
+      padding:0 20px; background-color:$sub3;}
+    #rwdFoot {width:calc(100% - 40px); height: 30px; 
+      padding:0 20px; background-color:$sub1;}
+  
+} // pcfull.scss

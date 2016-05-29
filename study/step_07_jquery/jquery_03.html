@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+  <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./js/jquery/jquery-ui.min.js"></script>
+  <title>Document</title>
+  <style>
+    li{width:300px; height:50px; border:1px solid #777; cursor: pointer;}
+  </style>
+  <script>
+    $(function(){
+      $("ul>li:odd").hide();
+      $("ul>li").on("click", function(){
+          $(this).next("li").slideToggle(500).css({backgroundColor: "#faa"});
+        });
+      $("ul>li").on("mouseout", function(){
+        $(this).css({backgroundColor: "#fa0"});
+      })
+      })
+  </script>
+</head>
+<body>
+  <ul>
+    <li>list_01</li>
+    <li>list_02</li>
+    <li>list_03</li>
+    <li>list_04</li>
+    <li>list_05</li>
+    <li>list_06</li>
+    <li>list_07</li>
+    <li>list_08</li>
+    <li>list_09</li>
+    <li>list_10</li>
+  </ul>
+</body>
+</html>

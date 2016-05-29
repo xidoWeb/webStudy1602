@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="./js/jquery/jquery-1.12.2.min.js"></script>
+  <script src="./js/jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./js/jquery/jquery-ui.min.js"></script>
+  <title>each</title>
+  <style>
+    li{width:300px; height:50px; border:1px solid #777; }
+  </style>
+  <script>
+    $(function(){
+      var link = ["http://naver.com",
+                  "http://daum.net",
+                  "http://google.com",
+                  "http://greenart.co.kr",
+                  "http://w3schools.com",
+                  "http://ui.daum.net",
+                  "http://albamon.co.kr",
+                  "http://gdweb.co.kr",
+                  "http://behance.net",
+                  "http://cssawds.com"];
+      
+      var site = ["네이버", "다음", "구글", "그린컴",
+                  "w3스쿨", "ui.daum", "알바몬",
+                  "gdweb", "behance", "cssawds"];
+      
+      
+    
+      var i;
+      for(i=0; i<=link.length ; i++){
+
+      $("ul").append("<li><a>")
+             .find('li').eq(i)
+             .find('a')
+             .attr("href", link[i])
+             .text(site[i]);
+        
+//        $("ul").append("<li><a>");
+//        $("li").eq(i).find('a').attr("href", link[i]);  
+//        $("li").eq(i).find('a').text(site[i]);  
+        };
+//      $("li").on("click", function(){
+//        $(this).each(function(){
+//          $(this).css({backgroundColor:"#f60"});
+//          $(this).html('<a href="">링크</a>');
+//          $(this).find("a").text('글씨 입력/추가~~~')
+//                 .attr("href", link.index().each().html() ); 
+//          });
+//      });
+//      
+//      $("li").each().on("click", function(){
+//        $(this).css({backgroundColor:"#f60"});
+//      });
+    });
+  </script>
+</head>
+<body>
+  <ul>
+    
+  </ul>
+</body>
+</html>

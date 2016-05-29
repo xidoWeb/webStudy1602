@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="#" />
+  <link rel="apple-touch-icon" href="#" />
+  <!--css불러오기-->
+  <link rel="stylesheet" href="./css/lib/normalize.css" />
+  <link rel="stylesheet" href="./css/one_page.css" />
+  <!--하위버전-->
+  <!--[if lte IE 9]>
+    <script src="./js/dist/html5shiv.min.js"></script>
+    <script src="./js/dist/ie9.min.js"></script>
+    <script src="./js/dist/PIE.js"></script>
+    <script src="./js/dist/respond.min.js"></script>
+  <![endif]-->
+  <script src="js/jquery/jquery-1.12.2.min.js"></script>
+  <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/jquery/jquery-ui.min.js"></script>
+<!--  jquery작성 -->
+  <script src="./js/one_page.js"></script>
+  <title>one-page-scroll</title>
+  <style></style>
+  <script>
+    $(document).ready(function(){
+      onePage();// 원페이지스크롤 형
+    });
+  </script>
+</head>
+<body>
+  <div id="container">
+    <header id="headBox">
+      <h1><a href="">logo</a></h1>
+      <nav id="gnb">
+        <ul>
+          <li>
+            <a href="#content_1">메뉴_1</a>
+          </li>
+          <li>
+            <a href="#content_2">메뉴_2</a>
+          </li>
+          <li>
+            <a href="#content_3">메뉴_3</a>
+          </li>
+          <li>
+            <a href="#footBox">메뉴_4</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <article id="content_1">content_1</article>
+    <article id="content_2"><span>content_2</span></article>
+    <article id="content_3">content_3</article>
+    <footer id="footBox">footBox</footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
